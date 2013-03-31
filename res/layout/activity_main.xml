@@ -1,0 +1,60 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    style="@style/header_root_4comics">
+    <RelativeLayout
+        style="@style/header_relative_4comics">
+        <ImageView
+            android:id="@+id/header_bar_4comics"
+            style="@style/header_bar_4comics"
+            android:layout_width="fill_parent" />
+        <TextView
+            android:id="@+id/theme"
+            style="@style/header_title_4comics"
+            android:text="４コマ漫画目覚まし" />
+    </RelativeLayout>
+	<android.support.v4.app.FragmentTabHost
+	    android:id="@android:id/tabhost"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center_horizontal"
+	    tools:context=".MainActivity">
+	    
+	    
+	 
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        >
+	        
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:orientation="horizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+	            />
+	        
+	        <LinearLayout
+	            android:id="@+id/content"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_gravity="center"
+	            android:layout_weight="1"/>
+	        
+	        <FrameLayout 
+		        android:id="@+id/mediation"
+		        android:layout_width="fill_parent"
+		        android:layout_height="100px"
+		        android:background="@drawable/bannar"
+		        >
+		    </FrameLayout>
+	      
+	 
+	    </LinearLayout>
+	 
+	</android.support.v4.app.FragmentTabHost>
+</LinearLayout>
