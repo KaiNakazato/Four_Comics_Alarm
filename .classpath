@@ -3,10 +3,10 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry kind="lib" path="C:/DEV/workspace/4FrameComics/libs/adlantis.jar"/>
-	<classpathentry kind="lib" path="C:/DEV/workspace/4FrameComics/libs/GoogleAdMobAdsSdk-6.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/DEV/workspace/4FrameComics/libs/i-mobileSDK.jar"/>
-	<classpathentry kind="lib" path="C:/DEV/workspace/4FrameComics/libs/MedibaAdSDK-1.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/nakazatokai/Documents/workspace/4FrameComics/libs/adlantis.jar"/>
+	<classpathentry kind="lib" path="/Users/nakazatokai/Documents/workspace/4FrameComics/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="/Users/nakazatokai/Documents/workspace/4FrameComics/libs/GoogleAdMobAdsSdk-6.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/nakazatokai/Documents/workspace/4FrameComics/libs/i-mobileSDK.jar"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

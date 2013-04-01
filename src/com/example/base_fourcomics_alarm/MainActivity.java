@@ -129,7 +129,9 @@ public class MainActivity extends FragmentActivity {
 			tabButton[i].setBackgroundResource(tab[i].background_resouce_id);
 		}
     }
-    
+    private void conflict(String s){
+    	s.toString();
+    }
     
 	/**
 	 * リスナを設定
