@@ -129,8 +129,9 @@ public class MainActivity extends FragmentActivity {
 			tabButton[i].setBackgroundResource(tab[i].background_resouce_id);
 		}
     }
-    private void conflict(String s){
+    private void conflict_new(String s){
     	s.toString();
+    	System.out.printf("");
     }
     
 	/**
