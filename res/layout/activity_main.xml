@@ -1,6 +1,7 @@
 <LinearLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@drawable/haikei"
     style="@style/header_root_4comics">
     <RelativeLayout
         style="@style/header_relative_4comics">
@@ -37,9 +38,10 @@
 	            android:gravity="center"
 	            android:layout_gravity="center"
 	            />
-	        
+	   
 	        <LinearLayout
-	            android:id="@+id/content"
+	            android:orientation="vertical"
+	            android:id="@+id/realtabcontent"
 	            android:layout_width="match_parent"
 	            android:layout_height="0dp"
 	            android:layout_gravity="center"

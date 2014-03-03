@@ -3,9 +3,9 @@
     <!-- pressed -->
     <item
           android:state_pressed="true"
-          android:drawable="@drawable/tab_btn_alarm_background_on" />
+          android:drawable="@drawable/tab_haikei_hidari_on" />
     <!-- released -->
     <item
           android:state_pressed="false"
-          android:drawable="@drawable/tab_btn_alarm_background_off" />
+          android:drawable="@drawable/tab_haikei_hidari" />
 </selector>
