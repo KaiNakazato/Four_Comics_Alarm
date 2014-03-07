@@ -12,10 +12,9 @@ import com.example.framecomics.R;
 
 public class FourComicsListFragment extends Fragment {
 	TextView text;
-
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+		MainActivity.back_bt.setVisibility(View.GONE);
 		return inflater.inflate(R.layout.tab_comics_layout, container, false);
 	}
 

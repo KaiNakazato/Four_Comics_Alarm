@@ -1,24 +1,26 @@
 package com.example.control_alarm;
 
-import android.graphics.Color;
+import java.util.Calendar;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.TimePicker;
+import android.widget.TimePicker.OnTimeChangedListener;
 
 import com.example.base_fourcomics_alarm.MainActivity;
+import com.example.drum_picker.TimeDrumPicker;
 import com.example.framecomics.R;
 
 public class AlarmFragment extends  Fragment{
 	
-	TextView text;
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		MainActivity.back_bt.setVisibility(View.GONE);
+		
 		return inflater.inflate(R.layout.tab_alarm_layout, container, false);
     }
 	
@@ -27,18 +29,21 @@ public class AlarmFragment extends  Fragment{
         super.onActivityCreated(savedInstanceState);
 
         MainActivity.theme.setText("アラーム設定");
-        text = (TextView)getActivity().findViewById(R.id.alarm_text);
-        text.setText("アラーム設定");
+        
+        Calendar calendar = Calendar.getInstance();
+		final int hour = calendar.get(Calendar.HOUR_OF_DAY);
+		final int minitue = calendar.get(Calendar.MINUTE);
+		final TimeDrumPicker tPicker = (TimeDrumPicker) getActivity().findViewById(R.id.timepicker);
+		tPicker.setOnTimeChangedListener(new OnTimeChangedListener() {
+			@Override
+			public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {
+				
+			}
+		});
+		
+		tPicker.setHour(hour);
+		tPicker.setMinitue(minitue);
+		
     }
-	
-	/**
-     * タブ内でFragment変更.
-     */
-//    private void changeView() {
-//        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-//        fragmentTransaction.addToBackStack(null);
-//        fragmentTransaction.replace(R.id.fragment, new AlarmFragment());
-//        fragmentTransaction.commit();
-//    }
 
 }

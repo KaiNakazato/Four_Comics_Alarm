@@ -2,7 +2,6 @@ package jp.quan_inc.ad;
 
 import android.app.Activity;
 import android.util.Log;
-import android.view.LayoutInflater;
 
 import com.google.ads.AdSize;
 import com.google.ads.mediation.MediationAdRequest;

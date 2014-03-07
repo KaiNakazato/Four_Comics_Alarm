@@ -18,6 +18,7 @@ public class IntroductionAndRecomendAppFragment extends Fragment {
 	TextView text;
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		MainActivity.back_bt.setVisibility(View.GONE);
 		return inflater.inflate(R.layout.tab_introduction_recomenndapp_layout, container, false);
     }
 	

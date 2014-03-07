@@ -6,7 +6,9 @@ import android.support.v4.app.FragmentTabHost;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageButton;
@@ -26,9 +28,9 @@ import com.google.ads.AdView;
 
 public class MainActivity extends FragmentActivity {
 
-	 public static TextView theme;
+	public static TextView theme;
+	public static Button back_bt;
 	private FrameLayout mediation;
-	private RelativeLayout hedear;
 	private AdView adView;
 	private float banner_saize = 100.0f;
 
@@ -36,10 +38,12 @@ public class MainActivity extends FragmentActivity {
 
 	private enum TAB {
 		ALARM(0, R.drawable.tab_btn_alarm, R.drawable.tab_btn_alarm_background,
-				AlarmFragment.class), 
-		COMICS_LIST(1,R.drawable.tab_btn_comic_list,R.drawable.tab_btn_comic_list_background,
-				FourComicsListFragment.class), 
-		RECOMMEND_APP(2,R.drawable.tab_btn_recommendation_app,R.drawable.tab_btn_recommendation_aap_background,
+				AlarmFragment.class), COMICS_LIST(1,
+				R.drawable.tab_btn_comic_list,
+				R.drawable.tab_btn_comic_list_background,
+				FourComicsListFragment.class), RECOMMEND_APP(2,
+				R.drawable.tab_btn_recommendation_app,
+				R.drawable.tab_btn_recommendation_aap_background,
 				IntroductionAndRecomendAppFragment.class);
 
 		/**
@@ -63,9 +67,7 @@ public class MainActivity extends FragmentActivity {
 	private TAB[] tab;
 	private ImageButton[] tabButton;
 	private TabSpec[] tabSpec;
-//	private Bundle[] bundle;
 
-	// private FragmentSwitcherFor4Comics fragment_swicher;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -76,14 +78,23 @@ public class MainActivity extends FragmentActivity {
 		/**
 		 * hedearのセットアップ
 		 */
-		 theme = (TextView)findViewById(R.id.theme);
+		theme = (TextView) findViewById(R.id.theme);
+		
+		back_bt = (Button) findViewById(R.id.header_back_bt);
+		back_bt.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				getCurrentFragment().popBackStack();
+			}
+		});
 
 		/**
 		 * タブのセットアップ
 		 */
-		 tab = TAB.values();
-		 initTabs(tab);
-		 
+		tab = TAB.values();
+		initTabs(tab);
+
 		// 最初にフォーカスをAlarmタブにフォーカスを当てる
 		setOnListener(0);
 
@@ -106,27 +117,26 @@ public class MainActivity extends FragmentActivity {
 		AdRequest adRequest = new AdRequest();
 		adView.loadAd(adRequest);
 	}
-	
-	
-	 /**
-     * タブ初期化
-     */
-    private void initTabs(TAB[] tab) {
-    	
-    	mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
+
+	/**
+	 * タブ初期化
+	 */
+	private void initTabs(TAB[] tab) {
+
+		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 		tabButton = new ImageButton[tab.length];
 		createView(tab);
 		add_tab_fragment(tab);
 
-        mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
-            @Override
-            public void onTabChanged(String tabId) {
-                // タブ切り替え時にBackStackをクリア
-                getCurrentFragment().clearBackStack();
-            }
-        });
-    }
+		mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+			@Override
+			public void onTabChanged(String tabId) {
+				// タブ切り替え時にBackStackをクリア
+				getCurrentFragment().clearBackStack();
+			}
+		});
+	}
 
 	private void add_tab_fragment(TAB[] tab) {
 
@@ -134,18 +144,21 @@ public class MainActivity extends FragmentActivity {
 
 		tabSpec = new TabSpec[size];
 		Bundle[] args = new Bundle[size];
-//		bundle = new Bundle[size];
+		// bundle = new Bundle[size];
 		for (int i = 0; i < size; i++) {
-			tabSpec[i] = mTabHost.newTabSpec("tab" + (i + 1)).setIndicator("tab" + (i + 1));
+			tabSpec[i] = mTabHost.newTabSpec("tab" + (i + 1)).setIndicator(
+					"tab" + (i + 1));
 			tabSpec[i].setIndicator(tabButton[i]);
 			args[i] = new Bundle();
 			// ///拡張for文でもっとすっきりまとめられる？？/////tabSpec[i],tabButton[i],bundle[i]は、連想配列のパラメータを使えば良い？？/////逆に煩雑になりそう。/////このままがbetter。
 			if (tab[i] == TAB.ALARM) {
 				args[i].putString("root", TAB.ALARM.fragmentClass.getName());
 			} else if (tab[i] == TAB.COMICS_LIST) {
-				args[i].putString("root", TAB.COMICS_LIST.fragmentClass.getName());
+				args[i].putString("root",
+						TAB.COMICS_LIST.fragmentClass.getName());
 			} else if (tab[i] == TAB.RECOMMEND_APP) {
-				args[i].putString("root", TAB.RECOMMEND_APP.fragmentClass.getName());
+				args[i].putString("root",
+						TAB.RECOMMEND_APP.fragmentClass.getName());
 			}
 			mTabHost.addTab(tabSpec[i], TabRootFragment.class, args[i]);
 
@@ -189,29 +202,22 @@ public class MainActivity extends FragmentActivity {
 	}
 
 	private TabRootFragment getCurrentFragment() {
-        return (TabRootFragment) getSupportFragmentManager().findFragmentById(R.id.realtabcontent);
-    }
-	
+		return (TabRootFragment) getSupportFragmentManager().findFragmentById(
+				R.id.realtabcontent);
+	}
+
 	@Override
-    public void onBackPressed() {
-        if (!getCurrentFragment().popBackStack()) {
-            // タブ内FragmentのBackStackがない場合は終了
-            super.onBackPressed();
-        }
-    }
-	
+	public void onBackPressed() {
+		if (!getCurrentFragment().popBackStack()) {
+			// タブ内FragmentのBackStackがない場合は終了
+			super.onBackPressed();
+		}
+	}
+
 	@Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mTabHost = null;
-    }
-	
-	// public void forwardFragment(Class<?> fragmentClass) {
-	// fragment_swicher.forwardReplace(fragmentClass);
-	// }
-	//
-	// public void backFragment() {
-	// fragment_swicher.backReplace();
-	// }
+	protected void onDestroy() {
+		super.onDestroy();
+		mTabHost = null;
+	}
 
 }
