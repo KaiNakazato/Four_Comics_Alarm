@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.base_fourcomics_alarm.MainActivity;
@@ -15,7 +16,7 @@ import com.example.framecomics.R;
 
 public class FourComicsSelectFragment extends Fragment {
 	ListView lv;
-	ImageButton[] imageButton;
+	ImageButton[] image_button;
 
 	private enum ID {
 		CORN(0, R.id.img1), TOMATO(1, R.id.img2), EGG_PLANT(2, R.id.img3), CARROT(
@@ -44,14 +45,14 @@ public class FourComicsSelectFragment extends Fragment {
 
 		MainActivity.theme.setText("よんこま漫画");
 
-		imageButton = new ImageButton[4];
+		image_button = new ImageButton[ID.values().length];
 
 		id = ID.values();
 
 		for (ID _id : id) {
-			imageButton[_id.index] = (ImageButton) getActivity().findViewById(
+			image_button[_id.index] = (ImageButton) getActivity().findViewById(
 					_id.resource_id);
-			imageButton[_id.index].setOnClickListener(new OnClickListener() {
+			image_button[_id.index].setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {
 					changeView();
@@ -65,8 +66,8 @@ public class FourComicsSelectFragment extends Fragment {
 				.beginTransaction();
 		fragmentTransaction.addToBackStack(null);
 		// class名を変えよう
-		fragmentTransaction.replace(R.id.fragment,
-				new FourComicsListFragment());
+		fragmentTransaction
+				.replace(R.id.fragment, new FourComicsListFragment());
 		fragmentTransaction.commit();
 	}
 

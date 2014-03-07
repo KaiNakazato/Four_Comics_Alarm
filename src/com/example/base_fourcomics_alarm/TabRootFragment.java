@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.example.framecomics.R;
 
@@ -20,7 +22,8 @@ public class TabRootFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        FrameLayout Layout = (FrameLayout) getActivity().findViewById(R.id.fragment);
+        ((MainActivity)getActivity()).setPaddingBottom(Layout);
         // 引数から初期のFragmentを取得
         Bundle args = getArguments();
         String rootClass = args.getString("root");

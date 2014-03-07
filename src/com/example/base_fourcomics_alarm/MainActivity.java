@@ -20,7 +20,6 @@ import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 
 import com.example.control_alarm.AlarmFragment;
-import com.example.control_four_comics.FourComicsListFragment;
 import com.example.control_four_comics.FourComicsSelectFragment;
 import com.example.control_recommend_app.IntroductionAndRecomendAppFragment;
 import com.example.framecomics.R;
@@ -30,6 +29,8 @@ import com.google.ads.AdView;
 
 public class MainActivity extends FragmentActivity {
 
+	private static final String TAG = MainActivity.class.getSimpleName();
+	
 	public static TextView theme;
 	public static Button back_bt;
 	private FrameLayout mediation;
@@ -219,5 +220,23 @@ public class MainActivity extends FragmentActivity {
 		super.onDestroy();
 		mTabHost = null;
 	}
-
+	
+	/**
+	 *　fragmentのレイアウトが広告部分とかぶるので調整している。
+	 *　広告の高さ分だけ余白を設けている。
+	 * @param layout
+	 */
+	public void setPaddingBottom(LinearLayout layout){
+		layout.setPadding(layout.getPaddingLeft(), layout.getPaddingTop(), layout.getPaddingRight(), mediation.getHeight());
+	}
+	
+    public void setPaddingBottom(FrameLayout layout){
+    	layout.setPadding(layout.getPaddingLeft(), layout.getPaddingTop(), layout.getPaddingRight(), mediation.getHeight());
+	}
+    
+    public void setPaddingBottom(RelativeLayout layout){
+    	layout.setPadding(layout.getPaddingLeft(), layout.getPaddingTop(), layout.getPaddingRight(), mediation.getHeight());
+	}
+	
+	
 }

@@ -10,6 +10,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.base_fourcomics_alarm.MainActivity;
@@ -28,6 +29,7 @@ public class FourComicsListFragment extends Fragment{
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         MainActivity.theme.setText("よんこま漫画");
+        
         
      // リソースに準備した画像ファイルからBitmapを作成しておく
      		Bitmap image;
