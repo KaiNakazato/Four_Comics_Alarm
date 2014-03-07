@@ -20,7 +20,6 @@ public class AlarmFragment extends  Fragment{
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		MainActivity.back_bt.setVisibility(View.GONE);
-		
 		return inflater.inflate(R.layout.tab_alarm_layout, container, false);
     }
 	

@@ -28,7 +28,7 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-
+    
     <style name="header_back_button_4comics">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -36,18 +36,6 @@
         <item name="android:visibility">gone</item>
     </style>
 
-    <!--
-    <style name="header_setting_4comics">
-        <item name="android:layout_width">47dp</item>
-        <item name="android:layout_height">33dp</item>
-        <item name="android:layout_alignParentRight">true</item>
-        <item name="android:layout_centerVertical">true</item>
-        <item name="android:layout_marginRight">5dp</item>
-        <item name="android:adjustViewBounds">true</item>
-        <item name="android:background">@null</item>
-        <item name="android:scaleType">centerInside</item>
-        <item name="android:src">@drawable/button_header_setting</item>
-    </style>
-    -->
+  
 
 </resources>
