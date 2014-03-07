@@ -3,6 +3,7 @@ package com.example.base_fourcomics_alarm;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 
 import com.example.control_alarm.AlarmFragment;
 import com.example.control_four_comics.FourComicsListFragment;
+import com.example.control_four_comics.FourComicsSelectFragment;
 import com.example.control_recommend_app.IntroductionAndRecomendAppFragment;
 import com.example.framecomics.R;
 import com.google.ads.AdRequest;
@@ -26,7 +28,7 @@ import com.google.ads.AdView;
 
 public class MainActivity extends FragmentActivity {
 
-	 public static TextView theme;
+	public static TextView theme;
 	private FrameLayout mediation;
 	private RelativeLayout hedear;
 	private AdView adView;
@@ -38,7 +40,7 @@ public class MainActivity extends FragmentActivity {
 		ALARM(0, R.drawable.tab_btn_alarm, R.drawable.tab_btn_alarm_background,
 				AlarmFragment.class), 
 		COMICS_LIST(1,R.drawable.tab_btn_comic_list,R.drawable.tab_btn_comic_list_background,
-				FourComicsListFragment.class), 
+				FourComicsSelectFragment.class), 
 		RECOMMEND_APP(2,R.drawable.tab_btn_recommendation_app,R.drawable.tab_btn_recommendation_aap_background,
 				IntroductionAndRecomendAppFragment.class);
 
