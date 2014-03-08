@@ -45,6 +45,7 @@ public class FourComicsSelectFragment extends Fragment {
 
 		MainActivity.theme.setText("よんこま漫画");
 
+		
 		image_button = new ImageButton[ID.values().length];
 
 		id = ID.values();
