@@ -186,16 +186,33 @@ public class MainActivity extends FragmentActivity {
 		tabButton[first_forcus].setImageLevel(1);
 		for (int i = 0; i < size; i++) {
 			final int index = i;
+			//onClickだとtabHostに影響がでてFragmentの切り替えが上手くいかない。
+			//onTouchだと、クリックと判定されない動作のときにタブの画像が切り替えられてしまう。
 			tabButton[index].setOnTouchListener(new OnTouchListener() {
 
 				@Override
 				public boolean onTouch(View v, MotionEvent event) {
 
-					for (int j = 0; j < size; j++) {
-						tabButton[j].setImageLevel(0);
+					
+					switch(event.getAction()){
+					case MotionEvent.ACTION_DOWN:
+						Log.v(TAG, "Down:"+event.getAction());
+						break;
+					case MotionEvent.ACTION_MOVE:
+						Log.v(TAG, "Move:"+event.getAction());
+						break;
+					case MotionEvent.ACTION_UP:
+						Log.v(TAG, "Up:"+event.getAction());
+						for (int j = 0; j < size; j++) {
+							tabButton[j].setImageLevel(0);
+						}
+						tabButton[index].setImageLevel(1);
+						break;
+					case MotionEvent.ACTION_CANCEL:
+						Log.v(TAG, "Cancel:"+event.getAction());
+						break;
 					}
-					tabButton[index].setImageLevel(1);
-					// fragment_swicher.init(tab[index].fragmentClass);
+					
 					return false;
 				}
 			});

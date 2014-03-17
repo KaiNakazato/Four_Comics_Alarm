@@ -122,7 +122,7 @@ public class DrumPicker extends FrameLayout{
 		TextView textView = new TextView(getContext());
 		textView = new TextView(getContext());
 		textView.setTextColor(Color.rgb(0, 153, 134));
-		textView.setTextSize(30);
+		textView.setTextSize(25);
 		textView.setGravity(Gravity.CENTER);
 		textView.setText(text);
 		textView.setId(id);
