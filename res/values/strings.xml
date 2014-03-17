@@ -4,5 +4,8 @@
     <string name="app_name">4FrameComics</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <!--　おすすめアプリ広告  -->
+    <string name="recomend_app_nothing">現在オススメアプリはありません。</string>
+    <string name="network_erro">インターネットの接続状況を確認してください。</string>
 
 </resources>

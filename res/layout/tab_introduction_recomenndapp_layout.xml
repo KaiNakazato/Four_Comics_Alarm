@@ -10,8 +10,15 @@
         android:layout_centerInParent="true" />
     
     <Button
-        android:id="@+id/next"
+        android:id="@+id/introduction"
         android:layout_below="@id/introduction_recommndapp_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/recommend"
+        android:layout_below="@id/introduction"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

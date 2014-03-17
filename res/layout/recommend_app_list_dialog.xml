@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/recommend_app_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"/>
+
+   
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@id/recommend_app_list"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_left" />
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_alignRight="@id/recommend_app_list"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right" />
+
+    <TextView
+        android:id="@+id/recommend_app_contents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/recommend_app_list"
+        android:text="0/0"
+        android:textColor="#F5F5DC"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+         />
+
+</RelativeLayout>

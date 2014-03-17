@@ -2,7 +2,6 @@ package com.example.drum_picker;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ScrollView;
 
