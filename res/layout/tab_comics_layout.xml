@@ -17,7 +17,7 @@
             android:id="@+id/layout"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="fill_parent">
             
             <ImageButton
@@ -27,7 +27,7 @@
                 android:layout_height="fill_parent"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                android:src="@drawable/carrot" />
+                android:src="@drawable/morokoshi_large" />
             
             <ImageButton 
                 android:id="@+id/img2"
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                android:src="@drawable/carrot"/>
+                android:src="@drawable/tomato_large"/>
             
             <ImageButton 
                 android:id="@+id/img3"
@@ -45,7 +45,16 @@
                 android:layout_width="wrap_content"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                android:src="@drawable/carrot"/>
+                android:src="@drawable/nasu_large"/>
+            
+            <ImageButton 
+                android:id="@+id/img4"
+                android:adjustViewBounds="true"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ninjin_large"/>
             
         </LinearLayout>
     </HorizontalScrollView>
