@@ -57,5 +57,6 @@ public class RecommendAppControl {
 	private static void showDialog(Dialog dialog) {
 		dialog.show();
 	}
+	
 
 }

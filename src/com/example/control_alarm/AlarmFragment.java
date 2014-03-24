@@ -2,6 +2,8 @@ package com.example.control_alarm;
 
 import java.util.Calendar;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -93,7 +95,8 @@ public class AlarmFragment extends Fragment {
 		tPicker.setHour(time_hour);
 		tPicker.setMinitue(time_minute);
 
-		Log.v(TAG, "timepicker:"+"hight:"+tPicker.getWidth()+"width:"+tPicker.getWidth());
+		Log.v(TAG, "timepicker:" + "hight:" + tPicker.getWidth() + "width:"
+				+ tPicker.getWidth());
 	}
 
 	private void init_volumebar() {
@@ -152,7 +155,7 @@ public class AlarmFragment extends Fragment {
 											AlarmPreferenceDefinition.SNOOZE_KEY,
 											isChecked);
 							if (isChecked) {
-
+								showSettingSnoozeDialog();
 							} else {
 
 							}
@@ -263,6 +266,33 @@ public class AlarmFragment extends Fragment {
 		default:
 			break;
 		}
+	}
+
+	private DialogInterface.OnClickListener selectSnoozeTimeListener = new DialogInterface.OnClickListener() {
+		public void onClick(DialogInterface dialog, int id) {
+			switch (id) {
+			// 3分(positiveButton)
+			case -1:
+				// Log.v(TAG, "snoozeTimeid:P:" + id);
+				break;
+			// 5分(NaturalButton)
+			case -3:
+				// Log.v(TAG, "snoozeTimeid:Na:" + id);
+				break;
+			// 10分(NegativeButton)
+			case -2:
+				// Log.v(TAG, "snoozeTimeid:Ne:" + id);
+				break;
+			}
+		}
+	};
+
+	private void showSettingSnoozeDialog() {
+		new AlertDialog.Builder(getActivity()).setTitle("スヌーズ設定")
+				.setPositiveButton("３分", selectSnoozeTimeListener)
+				.setNeutralButton("５分", selectSnoozeTimeListener)
+				.setNegativeButton("１０分", selectSnoozeTimeListener)
+				.setCancelable(false).create().show();
 	}
 
 }

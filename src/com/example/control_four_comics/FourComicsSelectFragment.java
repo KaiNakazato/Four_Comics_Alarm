@@ -82,7 +82,6 @@ public class FourComicsSelectFragment extends Fragment {
 
 
 		imange_bt.setOnTouchListener(new OnTouchListener() {
-
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 
