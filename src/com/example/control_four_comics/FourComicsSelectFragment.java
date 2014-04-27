@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
@@ -53,34 +52,30 @@ public class FourComicsSelectFragment extends Fragment {
 		id = ID.values();
 
 		for (ID _id : id) {
-			image_button[_id.index] = (ImageButton) getActivity().findViewById(
-					_id.resource_id);
-
-			setLisners(image_button[_id.index]);
-
+			image_button[_id.index] = (ImageButton) getActivity().findViewById(_id.resource_id);
+			setLisners(image_button[_id.index], _id.index);
 		}
 
 	}
 
-	private void changeView() {
+	private void changeView(FourComicsListFragment fclf) {
 		FragmentTransaction fragmentTransaction = getFragmentManager()
 				.beginTransaction();
 		fragmentTransaction.addToBackStack(null);
 		// class名を変えよう
 		fragmentTransaction
-				.replace(R.id.fragment, new FourComicsListFragment());
+				.replace(R.id.fragment, fclf);
 		fragmentTransaction.commit();
 	}
-
-	private void setLisners(ImageButton imange_bt) {
+	
+	private void setLisners(ImageButton imange_bt, final int idx) {
 		imange_bt.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				changeView();
+				changeView(initFourFragment(idx));
 			}
 		});
-
-
+		
 		imange_bt.setOnTouchListener(new OnTouchListener() {
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
@@ -102,6 +97,12 @@ public class FourComicsSelectFragment extends Fragment {
 				return false;
 			}
 		});
+	}
+	
+	private FourComicsListFragment initFourFragment(int idx) {
+		FourComicsListFragment initFragment = new FourComicsListFragment();
+		initFragment.setSelectedIndex(idx);
+		return initFragment;
 	}
 
 }

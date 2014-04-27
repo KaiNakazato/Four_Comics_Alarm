@@ -28,7 +28,7 @@ public class FourComicsListCustomAdapter extends ArrayAdapter<FourComicsData> {
 		// 特定の行（position）のデータを得る
 		FourComicsData item = (FourComicsData) getItem(position);
 
-		// converViewは使いまわしされている可能性があるのでnullの時だけ新しく作る
+		// convertViewは使いまわしされている可能性があるのでnullの時だけ新しく作る
 		if (null == convertView) {
 			convertView = layoutInflater_.inflate(R.layout.four_comics_column,
 					null);
@@ -36,20 +36,28 @@ public class FourComicsListCustomAdapter extends ArrayAdapter<FourComicsData> {
 
 		// ComicDataのデータをViewの各widgetにセットする
 		TextView textNumberView;
-		textNumberView =(TextView) convertView.findViewById(R.id.comic_number);
+		textNumberView = (TextView) convertView.findViewById(R.id.comic_number);
 		textNumberView.setText(item.getNumberData());
 
 		ImageView imageView;
-		imageView =(ImageView) convertView.findViewById(R.id.comic_image);
+		imageView = (ImageView) convertView.findViewById(R.id.comic_image);
 		imageView.setImageBitmap(item.getImageData());
 
 		TextView textTitleView;
-		textTitleView =(TextView) convertView.findViewById(R.id.comic_title);
+		textTitleView = (TextView) convertView.findViewById(R.id.comic_title);
 		textTitleView.setText(item.getTitleData());
 
 		ImageButton buttonView;
 		buttonView = (ImageButton) convertView.findViewById(R.id.comic_button);
 		buttonView.setImageBitmap(item.getButtonData());
+
+		ImageView imageFilter;
+		imageFilter = (ImageView) convertView.findViewById(R.id.comic_filter);
+		if (item.isFlagFilter()) {
+			imageFilter.setVisibility(View.VISIBLE);
+		} else {
+			imageFilter.setVisibility(View.GONE);
+		}
 
 		return convertView;
 	}

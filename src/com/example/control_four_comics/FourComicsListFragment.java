@@ -16,45 +16,77 @@ import android.widget.ListView;
 import com.example.base_fourcomics_alarm.MainActivity;
 import com.example.framecomics.R;
 
+public class FourComicsListFragment extends Fragment {
+	final int CORN = 0;
+	final int TOMATO = 1;
+	final int EGG_PLANT = 2;
+	final int CARROT = 3;
 
-public class FourComicsListFragment extends Fragment{
-	
+	private int selected_idx;
+	private int resource_id;
+
 	@Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
 		MainActivity.back_bt.setVisibility(View.VISIBLE);
-		return inflater.inflate(R.layout.child_comicslist_layout, container, false);
-    }
-	
+		return inflater.inflate(R.layout.child_comicslist_layout, container,
+				false);
+	}
+
 	@Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        MainActivity.theme.setText("よんこま漫画");
-        
-        
-     // リソースに準備した画像ファイルからBitmapを作成しておく
-     		Bitmap image;
-     		image = BitmapFactory.decodeResource(getResources(), R.drawable.carrot);
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		MainActivity.theme.setText("よんこま漫画");
 
-     		Bitmap button;
-     		button = BitmapFactory.decodeResource(getResources(),
-     				R.drawable.ic_launcher);
+		// リソースに準備した画像ファイルからBitmapを作成しておく
+		Bitmap image;
 
-     		// データの作成
-     		List<FourComicsData> objects = new ArrayList<FourComicsData>();
+		switch (selected_idx) {
+		case CORN:
+			resource_id = R.drawable.corn;
+			break;
+		case TOMATO:
+			resource_id = R.drawable.tomato;
+			break;
+		case EGG_PLANT:
+			resource_id = R.drawable.eggplant;
+			break;
+		case CARROT:
+			resource_id = R.drawable.carrot;
+			break;
+		}
+		image = BitmapFactory.decodeResource(getResources(), resource_id);
 
-     		for (int i = 1; i < 15; i++) {
-     			FourComicsData item = new FourComicsData();
-     			item.setNumberData(String.format("No.%02d", i));
-     			item.setImageData(image);
-     			item.setTitleData(i + "つ目！");
-     			item.setButtonData(button);
-     			objects.add(item);
-     		}
+		Bitmap button;
+		button = BitmapFactory.decodeResource(getResources(),
+				R.drawable.ic_launcher);
 
-     		FourComicsListCustomAdapter customComicListAdapter = new FourComicsListCustomAdapter(
-     				getActivity(), 0, objects);
+		// データの作成
+		List<FourComicsData> objects = new ArrayList<FourComicsData>();
 
-     		ListView listView = (ListView) getActivity().findViewById(R.id.list_comics);
-     		listView.setAdapter(customComicListAdapter);
-    }
+		for (int i = 1; i < 15; i++) {
+			FourComicsData item = new FourComicsData();
+			item.setNumberData(String.format("No.%02d", i));
+			item.setImageData(image);
+			item.setTitleData(i + "つ目！");
+			item.setButtonData(button);
+			if (i < 3) {
+				item.setFlagFilter(false);
+			} else {
+				item.setFlagFilter(true);
+			}
+			objects.add(item);
+		}
+
+		FourComicsListCustomAdapter customComicListAdapter = new FourComicsListCustomAdapter(
+				getActivity(), 0, objects);
+
+		ListView listView = (ListView) getActivity().findViewById(
+				R.id.list_comics);
+		listView.setAdapter(customComicListAdapter);
+	}
+
+	public void setSelectedIndex(int idx) {
+		selected_idx = idx;
+	}
 }
