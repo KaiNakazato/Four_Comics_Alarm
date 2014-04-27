@@ -39,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="スヌーズ"
+                android:textSize="23sp"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <CheckBox
@@ -46,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="振動"
+                android:textSize="23sp"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <ToggleButton
@@ -57,6 +59,7 @@
                 android:textOff="OFF"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#ffffff"
+                android:textSize="23sp"
                 android:background="@drawable/tggle_btn_alarm"
                  />
         </LinearLayout>
@@ -68,16 +71,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/relativeLayout1"
         android:orientation="horizontal"
+        android:gravity="center_vertical"
         android:paddingLeft="30dp"
         android:paddingRight="30dp" >
         
         <TextView
+            android:id="@+id/volume_tx"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="11"
             android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="アラーム音量" />
+            android:text="アラーム音量" 
+            android:textSize="23sp"/>
 
         <SeekBar
             android:id="@+id/volumeBar"

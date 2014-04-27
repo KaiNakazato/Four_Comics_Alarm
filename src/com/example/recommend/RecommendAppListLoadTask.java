@@ -12,6 +12,8 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -22,7 +24,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
 public class RecommendAppListLoadTask extends
-		AsyncTask<Void, Integer, ArrayList<RecommendAppData>> {
+		AsyncTask<Void, Integer, ArrayList<RecommendAppData>> implements OnCancelListener{
 
 	private static final String TAG = RecommendAppListLoadTask.class
 			.getSimpleName();
@@ -174,9 +176,13 @@ public class RecommendAppListLoadTask extends
 		progressDialog.setMessage("Loading data...");
 		// プログレスダイアログのスタイルを円スタイルに設定します
 		progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-		// progressDialog.setIndeterminate(true);
-		progressDialog.setCancelable(false);
+		 progressDialog.setIndeterminate(true);
 		progressDialog.show();
+	}
+
+	@Override
+	public void onCancel(DialogInterface dialog) {
+		
 	}
 
 }

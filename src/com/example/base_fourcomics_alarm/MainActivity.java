@@ -1,5 +1,6 @@
 package com.example.base_fourcomics_alarm;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
@@ -80,7 +81,7 @@ public class MainActivity extends FragmentActivity {
 		 * hedearのセットアップ
 		 */
 		theme = (TextView) findViewById(R.id.theme);
-		
+		theme.setTypeface(Typeface.createFromAsset(getAssets(), "yamafont.ttf"));
 		back_bt = (Button) findViewById(R.id.header_back_bt);
 		back_bt.setOnClickListener(new OnClickListener() {
 

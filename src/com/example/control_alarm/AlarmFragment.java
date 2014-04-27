@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -16,6 +17,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
 import android.widget.ToggleButton;
@@ -29,6 +31,7 @@ public class AlarmFragment extends Fragment {
 	private TimeDrumPicker tPicker;
 	private CheckBox snooze_check, vibration_check;
 	private ToggleButton alarm_ON_OFF_bt;
+	private TextView volume_tx;
 	private SeekBar volume_bar;
 	private ImageView[] image;
 
@@ -62,8 +65,9 @@ public class AlarmFragment extends Fragment {
 		init_snooze();
 		init_vibration();
 		init_ON_OFF_bt();
-		init_volumebar();
+		init_volume_bar_text();
 		init_selectImage();
+		setTypeFace();
 
 	}
 
@@ -99,8 +103,10 @@ public class AlarmFragment extends Fragment {
 				+ tPicker.getWidth());
 	}
 
-	private void init_volumebar() {
-		if (!(volume_bar instanceof SeekBar)) {
+	private void init_volume_bar_text() {
+			volume_tx = (TextView) getActivity().findViewById(R.id.volume_tx);
+			
+
 			volume_bar = (SeekBar) getActivity().findViewById(R.id.volumeBar);
 			volume_bar
 					.setProgress(new AlarmPreference(getActivity())
@@ -134,11 +140,9 @@ public class AlarmFragment extends Fragment {
 											seekBar.getProgress());
 						}
 					});
-		}
 	}
 
 	private void init_snooze() {
-		if (!(snooze_check instanceof CheckBox)) {
 			snooze_check = (CheckBox) getView().findViewById(
 					R.id.snoozeCheckBox);
 			snooze_check.setChecked(new AlarmPreference(getActivity())
@@ -161,12 +165,10 @@ public class AlarmFragment extends Fragment {
 							}
 						}
 					});
-		}
 
 	}
 
 	private void init_vibration() {
-		if (!(vibration_check instanceof CheckBox)) {
 			vibration_check = (CheckBox) getView().findViewById(
 					R.id.vibrationCheckBox);
 			vibration_check
@@ -190,12 +192,10 @@ public class AlarmFragment extends Fragment {
 							}
 						}
 					});
-		}
 
 	}
 
 	private void init_ON_OFF_bt() {
-		if (!(alarm_ON_OFF_bt instanceof ToggleButton)) {
 			alarm_ON_OFF_bt = (ToggleButton) getView().findViewById(
 					R.id.alarmSwich);
 			alarm_ON_OFF_bt
@@ -219,7 +219,6 @@ public class AlarmFragment extends Fragment {
 							}
 						}
 					});
-		}
 	}
 
 	private void init_selectImage() {
@@ -293,6 +292,17 @@ public class AlarmFragment extends Fragment {
 				.setNeutralButton("５分", selectSnoozeTimeListener)
 				.setNegativeButton("１０分", selectSnoozeTimeListener)
 				.setCancelable(false).create().show();
+	}
+	
+	private void setTypeFace(){
+		snooze_check.setTypeface(Typeface.createFromAsset(getActivity()
+				.getAssets(), "yamafont.ttf"));
+		vibration_check.setTypeface(Typeface.createFromAsset(getActivity()
+				.getAssets(), "yamafont.ttf"));
+		alarm_ON_OFF_bt.setTypeface(Typeface.createFromAsset(getActivity()
+				.getAssets(), "yamafont.ttf"));
+		volume_tx.setTypeface(Typeface.createFromAsset(getActivity()
+				.getAssets(), "yamafont.ttf"));
 	}
 
 }

@@ -9,6 +9,7 @@ import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.graphics.Paint.Style;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -123,6 +124,8 @@ public class DrumPicker extends FrameLayout{
 		textView = new TextView(getContext());
 		textView.setTextColor(Color.rgb(0, 153, 134));
 		textView.setTextSize(25);
+		//処理が劇的に遅くなった。　対処法。。。今のところなし
+//		textView.setTypeface(Typeface.createFromAsset(getContext().getAssets(), "yamafont.ttf"));
 		textView.setGravity(Gravity.CENTER);
 		textView.setText(text);
 		textView.setId(id);

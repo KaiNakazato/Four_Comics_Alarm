@@ -1,5 +1,6 @@
 package com.example.control_recommend_app;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -33,13 +34,11 @@ public class IntroductionAndRecomendAppFragment extends Fragment {
 		super.onActivityCreated(savedInstanceState);
 
 		MainActivity.theme.setText("アプリ説明＆おすすめアプリ");
-		text = (TextView) getActivity().findViewById(
-				R.id.introduction_recommndapp_text);
-		text.setText("アプリ説明＆おすすめアプリ");
-
+		
 		Button button_introduction = (Button) getActivity().findViewById(
 				R.id.introduction);
 		button_introduction.setText("アプリ説明");
+		button_introduction.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "yamafont.ttf"));
 		button_introduction.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -49,6 +48,7 @@ public class IntroductionAndRecomendAppFragment extends Fragment {
 		Button button_recommend = (Button) getActivity().findViewById(
 				R.id.recommend);
 		button_recommend.setText("おすすめアプリ");
+		button_recommend.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "yamafont.ttf"));
 		button_recommend.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
