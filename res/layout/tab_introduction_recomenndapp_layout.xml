@@ -3,30 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    
     <Button
         android:id="@+id/introduction"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/setsumei_morokoshi"
+        android:gravity="center"
         android:text="アプリ説明"
         android:textColor="#009986"
-        android:textSize="23sp"/>
-    
+        android:textSize="23sp" />
+
     <Button
         android:id="@+id/recommend"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/introduction"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
         android:layout_marginTop="20dp"
         android:background="@drawable/setsumei_tomato"
+        android:gravity="center"
         android:text="おすすめアプリ"
         android:textColor="#009986"
-        android:textSize="23sp"/>
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/select_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="コマ選択テスト用ボタン" >
+    </Button>
 
 </RelativeLayout>
