@@ -1,6 +1,5 @@
 package com.example.control_recommend_app;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +8,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView.FindListener;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -17,7 +15,6 @@ import com.example.base_fourcomics_alarm.MainActivity;
 import com.example.control_alarm.AlarmFragment;
 import com.example.framecomics.R;
 import com.example.recommend.RecommendAppControl;
-import com.example.select_frame.SelectFrame;
 
 public class IntroductionAndRecomendAppFragment extends Fragment {
 
@@ -37,7 +34,7 @@ public class IntroductionAndRecomendAppFragment extends Fragment {
 		super.onActivityCreated(savedInstanceState);
 
 		MainActivity.theme.setText("アプリ説明＆おすすめアプリ");
-
+		
 		Button button_introduction = (Button) getActivity().findViewById(
 				R.id.introduction);
 		button_introduction.setText("アプリ説明");
@@ -57,14 +54,6 @@ public class IntroductionAndRecomendAppFragment extends Fragment {
 			public void onClick(View v) {
 				new RecommendAppControl(getActivity())
 						.showDialogRecommendApp(RecommendAppControl.RECOMMEND_APP_LIST);
-			}
-		});
-		Button button_select_frame = (Button)getActivity().findViewById(R.id.select_frame);
-		button_select_frame.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(getActivity(), SelectFrame.class);
-				startActivity(intent);
 			}
 		});
 	}
