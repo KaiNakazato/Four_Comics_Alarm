@@ -1,8 +1,12 @@
 package com.example.control_four_comics;
 
+import java.io.BufferedInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Context;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -24,7 +28,6 @@ public class FourComicsListFragment extends Fragment {
 	final int CARROT = 3;
 
 	private int selected_idx;
-	private int resource_id;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,25 +43,22 @@ public class FourComicsListFragment extends Fragment {
 		MainActivity.theme.setText("よんこま漫画");
 
 		// リソースに準備した画像ファイルからBitmapを作成しておく
-		Bitmap image;
+		Bitmap image = null;
 
 		switch (selected_idx) {
 		case CORN:
-			resource_id = R.mipmap.corn;
+			image = loadBitmapAsset("corn.png",getActivity());
 			break;
 		case TOMATO:
-			resource_id = R.mipmap.tomato;
+			image = loadBitmapAsset("tomato.png",getActivity());
 			break;
 		case EGG_PLANT:
-			resource_id = R.mipmap.eggplant;
+			image = loadBitmapAsset("eggplant.png",getActivity());
 			break;
 		case CARROT:
-			resource_id = R.mipmap.carrot;
+			image = loadBitmapAsset("carrot.png",getActivity());
 			break;
 		}
-		Log.d("id",resource_id+"");
-		image = BitmapFactory.decodeResource(getResources(), resource_id);
-
 		Bitmap button;
 		button = BitmapFactory.decodeResource(getResources(),
 				R.drawable.ic_launcher);
@@ -90,5 +90,23 @@ public class FourComicsListFragment extends Fragment {
 
 	public void setSelectedIndex(int idx) {
 		selected_idx = idx;
+	}
+
+	public static Bitmap loadBitmapAsset(String fileName, Context context) {
+		final AssetManager assetManager = context.getAssets();
+		BufferedInputStream bis = null;
+		try {
+			bis = new BufferedInputStream(assetManager.open(fileName));
+			return BitmapFactory.decodeStream(bis);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				bis.close();
+			} catch (Exception e) {
+				//IOException, NullPointerException
+			}
+		}
+		return null;
 	}
 }
