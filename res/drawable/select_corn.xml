@@ -2,10 +2,10 @@
 <level-list xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:drawable="@drawable/morokoshi_small_off"
+        android:drawable="@mipmap/morokoshi_small_off"
         android:maxLevel="0"/>
     <item
-        android:drawable="@drawable/morokoshi_small"
+        android:drawable="@mipmap/morokoshi_small"
         android:maxLevel="1"/>
 
 </level-list>

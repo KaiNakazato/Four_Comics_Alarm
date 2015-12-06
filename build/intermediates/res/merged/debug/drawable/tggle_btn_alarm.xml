@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false"
+        android:drawable="@mipmap/nasu_button" >
+    </item>
+    <item android:state_checked="true"
+        android:drawable="@mipmap/tomato_button" >
+    </item>
+</selector><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/drawable/tggle_btn_alarm.xml -->

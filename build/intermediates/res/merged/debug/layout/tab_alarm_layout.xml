@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" >
+
+        <FrameLayout
+            android:id="@+id/timePickerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" 
+            >
+
+            <com.example.drum_picker.TimeDrumPicker
+                android:id="@+id/timepicker"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/checkItemLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/timePickerLayout"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/snoozeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="スヌーズ"
+                android:textSize="23sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/vibrationCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="振動"
+                android:textSize="23sp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ToggleButton
+                android:id="@+id/alarmSwich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:background="@drawable/tggle_btn_alarm"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" >
+        
+        <TextView
+            android:id="@+id/volume_tx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="アラーム音量" 
+            android:textSize="23sp"/>
+
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            android:max="100"
+            android:paddingLeft="7dp"
+            android:paddingRight="5dp"
+            android:layout_weight="19" />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_volume"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
+
+        <ImageView
+            android:id="@+id/image_corn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/select_corn" />
+
+        <ImageView
+            android:id="@+id/image_tomato"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/select_tomato" />
+
+        <ImageView
+            android:id="@+id/image_eggplant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/select_eggplant" />
+
+        <ImageView
+            android:id="@+id/image_carrot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/select_carrot" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/layout/tab_alarm_layout.xml -->

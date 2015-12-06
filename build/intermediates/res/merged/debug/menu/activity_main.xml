@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+
+</menu><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/menu/activity_main.xml -->

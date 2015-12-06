@@ -2,10 +2,10 @@
 <level-list xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:drawable="@drawable/tab_setsumei_off"
+        android:drawable="@mipmap/tab_setsumei_off"
         android:maxLevel="0"/>
     <item
-        android:drawable="@drawable/tab_setumei_on"
+        android:drawable="@mipmap/tab_setumei_on"
         android:maxLevel="1"/>
 
 </level-list>

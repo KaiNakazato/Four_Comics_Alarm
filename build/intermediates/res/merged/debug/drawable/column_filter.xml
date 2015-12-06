@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+    <solid 
+        android:color="#AA000000"/>
+
+</shape>
+<!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/drawable/column_filter.xml -->

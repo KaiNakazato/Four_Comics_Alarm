@@ -22,7 +22,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@+id/comic_number"
                 android:padding="5dip"
-                android:src="@drawable/carrot" />
+                android:src="@mipmap/haikei" />
 
             <TextView
                 android:id="@+id/comic_title"

@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/header_root_4comics"
-    android:background="@drawable/haikei" >
+    android:background="@mipmap/haikei" >
 
     <RelativeLayout style="@style/header_relative_4comics" >
 
@@ -15,7 +15,7 @@
             style="@style/header_back_button_4comics"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:background="@drawable/ninjin_button"
+            android:background="@mipmap/ninjin_button"
             android:textColor="#ffffff"
             android:text="もどる" />
 
@@ -58,7 +58,7 @@
                 android:id="@+id/mediation"
                 android:layout_width="fill_parent"
                 android:layout_height="100px"
-                android:background="@drawable/bannar" >
+                android:background="@mipmap/bannar" >
             </FrameLayout>
         </LinearLayout>
     </android.support.v4.app.FragmentTabHost>

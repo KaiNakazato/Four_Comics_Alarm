@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/comic_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/comic_image"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/comic_number"
+                android:padding="5dip"
+                android:src="@mipmap/haikei" />
+
+            <TextView
+                android:id="@+id/comic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/comic_image"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/comic_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Number:1" />
+
+            <ImageButton
+                android:id="@+id/comic_button"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignBottom="@+id/comic_image"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:choiceMode="singleChoice"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/comic_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@drawable/column_filter" />
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/layout/four_comics_column.xml -->

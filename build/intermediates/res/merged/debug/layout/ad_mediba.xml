@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- mediba -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_mediba" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+        <mediba.ad.sdk.android.openx.MasAdView
+	    	android:id="@+id/adview_mediba"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		/>
+</LinearLayout><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/layout/ad_mediba.xml -->

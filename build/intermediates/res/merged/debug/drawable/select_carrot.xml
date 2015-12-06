@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@mipmap/ninjin_small_off"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@mipmap/ninjin_small"
+        android:maxLevel="1"/>
+
+</level-list><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/drawable/select_carrot.xml -->

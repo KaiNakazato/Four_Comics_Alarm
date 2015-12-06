@@ -27,7 +27,7 @@
                 android:layout_height="fill_parent"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                android:src="@drawable/morokoshi_large" />
+                android:src="@mipmap/morokoshi_large" />
             
             <ImageButton 
                 android:id="@+id/img2"
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                android:src="@drawable/tomato_large"/>
+                android:src="@mipmap/tomato_large"/>
             
             <ImageButton 
                 android:id="@+id/img3"
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                android:src="@drawable/nasu_large"/>
+                android:src="@mipmap/nasu_large"/>
             
             <ImageButton 
                 android:id="@+id/img4"
@@ -54,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:background="@null"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ninjin_large"/>
+                android:src="@mipmap/ninjin_large"/>
             
         </LinearLayout>
     </HorizontalScrollView>

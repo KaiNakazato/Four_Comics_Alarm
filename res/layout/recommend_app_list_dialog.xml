@@ -20,7 +20,7 @@
         android:layout_alignLeft="@id/recommend_app_list"
         android:adjustViewBounds="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/arrow_left" />
+        android:src="@mipmap/arrow_left" />
 
     <ImageView
         android:id="@+id/arrow_right"
@@ -29,7 +29,7 @@
         android:layout_alignRight="@id/recommend_app_list"
         android:adjustViewBounds="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/arrow_right" />
+        android:src="@mipmap/arrow_right" />
 
     <TextView
         android:id="@+id/recommend_app_contents"

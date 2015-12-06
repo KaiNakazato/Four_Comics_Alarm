@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="i-mobileSDK">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/i-mobileSDK.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

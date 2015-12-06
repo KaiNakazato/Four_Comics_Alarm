@@ -19,7 +19,7 @@
         android:layout_alignLeft="@id/recommend_app_one"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/batu"
+        android:src="@mipmap/batu"
         />
   
 

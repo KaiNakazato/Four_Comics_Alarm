@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- i-mobile -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_adlantis" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+       	<jp.co.imobile.android.AdView 
+       	    android:layout_width="wrap_content" 
+			android:id="@+id/ad_imobile" 
+			mid="31835" 
+			asid="58874"
+			android:layout_height="wrap_content" 
+		/>
+</LinearLayout><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/layout/ad_imobile.xml -->

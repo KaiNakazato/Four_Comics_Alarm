@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,18 +44,19 @@ public class FourComicsListFragment extends Fragment {
 
 		switch (selected_idx) {
 		case CORN:
-			resource_id = R.drawable.corn;
+			resource_id = R.mipmap.corn;
 			break;
 		case TOMATO:
-			resource_id = R.drawable.tomato;
+			resource_id = R.mipmap.tomato;
 			break;
 		case EGG_PLANT:
-			resource_id = R.drawable.eggplant;
+			resource_id = R.mipmap.eggplant;
 			break;
 		case CARROT:
-			resource_id = R.drawable.carrot;
+			resource_id = R.mipmap.carrot;
 			break;
 		}
+		Log.d("id",resource_id+"");
 		image = BitmapFactory.decodeResource(getResources(), resource_id);
 
 		Bitmap button;

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\libs\MedibaAdSDK-1.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="047be09dcdadfd8a973a32d2c1665a50c0d452a6">
+        <dex dex="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\build\intermediates\pre-dexed\debug\MedibaAdSDK-1.1.0-0fab95901ca6e12382514315affb8984a4cdc6d5.jar" />
+    </item>
+    <item
+        jar="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="48c94ae70fa65718b382098237806a5909bb096e">
+        <dex dex="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\build\intermediates\pre-dexed\debug\android-support-v4-05bfbafff0c2deaaeb37870eaceb5fe75c83d4e1.jar" />
+    </item>
+    <item
+        jar="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\libs\gson-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="53bfcd3c8e310d1493b2691484525ed90b04e236">
+        <dex dex="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\build\intermediates\pre-dexed\debug\gson-2.2.2-b70e1164f1ac3c1a9434603956aaa63531b1ca05.jar" />
+    </item>
+    <item
+        jar="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\libs\GoogleAdMobAdsSdk-6.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e6b52dcd6402380542cb37557bd04e06e6d7e47d">
+        <dex dex="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\build\intermediates\pre-dexed\debug\GoogleAdMobAdsSdk-6.0.1-d1fcb3d79630f7ab92c06ad19953b5a30db25b10.jar" />
+    </item>
+    <item
+        jar="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\libs\i-mobileSDK.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2ffc462dced52b6f33b1af9a4cc891cad713a594">
+        <dex dex="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\build\intermediates\pre-dexed\debug\i-mobileSDK-9561fc9f4d563182ed1a3692f5ce984805302046.jar" />
+    </item>
+    <item
+        jar="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\libs\adlantis.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="79bdeb8b589098cc80dc2f9a447c73ddc9e62027">
+        <dex dex="C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\build\intermediates\pre-dexed\debug\adlantis-2e47582a1b914924ac070eda2c8e2f9ccaa58ed7.jar" />
+    </item>
+
+</items>

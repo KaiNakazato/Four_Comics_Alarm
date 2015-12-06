@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:interpolator="@android:anim/accelerate_interpolator">
+	<translate
+		android:duration="350"
+		android:fromXDelta="0%p" android:toXDelta="-100%p"
+		android:fromYDelta="0%p" android:toYDelta="0%p"
+		android:fillAfter="true"  android:fillEnabled="true"
+	/>
+</set><!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/anim/fragment_left_out_4comics.xml -->

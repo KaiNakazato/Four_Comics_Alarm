@@ -3,7 +3,7 @@
     android:id="@+id/hsv"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/haikei"
+    android:background="@mipmap/haikei"
     android:scrollbars="none" >
 
     <ScrollView
@@ -28,7 +28,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/image1" />
+                        android:src="@mipmap/image1" />
 
                     <TextView
                         android:id="@+id/upperleftnumber"
@@ -50,7 +50,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/image2" />
+                        android:src="@mipmap/image2" />
 
                     <TextView
                         android:id="@+id/upperrightnumber"
@@ -75,7 +75,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:src="@drawable/image3" />
+                        android:src="@mipmap/image3" />
 
                     <TextView
                         android:id="@+id/lowerleftnumber"
@@ -97,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:src="@drawable/image4" />
+                        android:src="@mipmap/image4" />
 
                     <TextView
                         android:id="@+id/lowerrightnumber"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:id="@+id/recommend_app_one"
+        android:layout_centerInParent="true"
+        android:layout_width="320dp"
+        android:layout_height="480dp"
+        android:padding="10dp"
+        android:adjustViewBounds="true"
+        />
+    
+    <ImageView
+        android:id="@+id/close_recommend_button"
+        android:adjustViewBounds="true"
+        android:layout_alignTop="@id/recommend_app_one"
+        android:layout_alignLeft="@id/recommend_app_one"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/batu"
+        />
+  
+
+</RelativeLayout>
+<!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/layout/recommend_app_one_dialog.xml -->

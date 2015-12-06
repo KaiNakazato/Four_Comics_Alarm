@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity" >
+    
+    <HorizontalScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/layout"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+            
+            <ImageButton
+                android:id="@+id/img1"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/morokoshi_large" />
+            
+            <ImageButton 
+                android:id="@+id/img2"
+                android:adjustViewBounds="true"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/tomato_large"/>
+            
+            <ImageButton 
+                android:id="@+id/img3"
+                android:adjustViewBounds="true"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/nasu_large"/>
+            
+            <ImageButton 
+                android:id="@+id/img4"
+                android:adjustViewBounds="true"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ninjin_large"/>
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+<!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/layout/tab_comics_layout.xml -->
