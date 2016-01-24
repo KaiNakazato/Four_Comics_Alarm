@@ -37,6 +37,11 @@ public class FourComicsListFragment extends Fragment {
 				false);
 	}
 
+	/**
+	 * @author toyozumi
+	 * @param savedInstanceState
+	 * R.id...で画像が読み込め舐めなかったので、assetを使った方法に変更。
+	 */
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
@@ -104,7 +109,7 @@ public class FourComicsListFragment extends Fragment {
 			try {
 				bis.close();
 			} catch (Exception e) {
-				//IOException, NullPointerException
+				e.printStackTrace();
 			}
 		}
 		return null;

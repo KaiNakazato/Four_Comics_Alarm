@@ -4,12 +4,13 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="11" />
+    <uses-sdk android:minSdkVersion="16" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -31,8 +32,9 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
         <activity
             android:name="com.example.select_frame.SelectFrame"
-            android:label="@string/app_name" >
-        </activity>
+            android:label="@string/app_name" />
+
+        <service android:name="com.example.alarm_service.AlarmService" />
         <!-- i-mobile -->
         <!-- i_mobile_Publisher_IDにしないとR.javaでエラーが出る -->
         <meta-data

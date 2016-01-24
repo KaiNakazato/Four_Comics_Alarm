@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/meem/Desktop/Four_Comics_Alarm/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">4FrameComics</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="network_erro">インターネットの接続状況を確認してください。</string>
     <string name="recomend_app_nothing">現在オススメアプリはありません。</string>
-    <!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/meem/Desktop/Four_Comics_Alarm/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -19,7 +19,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/values/style_header.xml -->
+    <!-- From: file:/C:/Users/meem/Desktop/Four_Comics_Alarm/res/values/style_header.xml -->
     <eat-comment/>
     <style name="header_back_button_4comics">
         <item name="android:layout_width">wrap_content</item>
@@ -51,7 +51,7 @@
         <item name="android:textSize">23sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <!-- From: file:/C:/pleiades-e4.4-java_20130625/pleiades/workspace/Four_Comics_Alarm/res/values/custom_dialog_style.xml -->
+    <!-- From: file:/C:/Users/meem/Desktop/Four_Comics_Alarm/res/values/custom_dialog_style.xml -->
     <eat-comment/>
     <style name="recommend_dialog" parent="@android:style/Theme.Dialog"> 
         <item name="android:windowBackground">@android:color/transparent</item>

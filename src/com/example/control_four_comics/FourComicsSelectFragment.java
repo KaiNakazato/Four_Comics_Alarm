@@ -38,6 +38,7 @@ public class FourComicsSelectFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		MainActivity.back_bt.setVisibility(View.GONE);
+		//メモリが少ない端末は強制終了する
 		return inflater.inflate(R.layout.tab_comics_layout, container, false);
 	}
 

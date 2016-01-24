@@ -1,85 +1,93 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:2:1-52:12
 	package
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:3:5-38
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:3:5-38
 	android:versionName
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:5:5-30
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:5:5-30
 	android:versionCode
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:4:5-28
-		INJECTED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml
-		INJECTED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml
+		INJECTED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:7:5-44
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:7:5-44
 	android:minSdkVersion
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:7:15-41
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:7:15-41
 application
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:9:5-43:19
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:9:5-44:19
 	android:label
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:12:9-41
 	android:allowBackup
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:10:9-35
 	android:icon
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:11:9-45
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:11:9-45
 	android:theme
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:13:9-62
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:13:9-62
 activity#com.example.base_fourcomics_alarm.MainActivity
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:14:9-23:20
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:14:9-23:20
 	android:screenOrientation
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:17:13-49
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:17:13-49
 	android:label
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:16:13-45
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:16:13-45
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:15:13-74
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:15:13-74
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:21:27-74
 activity#com.google.ads.AdActivity
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:24:9-26:125
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:24:9-26:125
 	android:configChanges
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:26:13-122
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:26:13-122
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:25:13-53
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:25:13-53
 activity#com.example.select_frame.SelectFrame
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:27:9-30:20
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:27:9-29:57
 	android:label
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:29:13-45
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:29:13-45
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:28:13-64
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:28:13-64
+service#com.example.alarm_service.AlarmService
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:31:9-74
+	android:name
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:31:18-71
 meta-data#i-mobile_Publisher_ID
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:33:9-35:36
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:34:9-36:36
 	android:value
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:35:13-33
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:36:13-33
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:34:13-49
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:35:13-49
 meta-data#Adlantis_Publisher_ID
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:40:9-42:45
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:41:9-43:45
 	android:value
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:42:13-42
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:43:13-42
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:41:13-49
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:42:13-49
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:45:5-79
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:46:5-79
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:45:22-76
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:46:22-76
 uses-permission#com.android.alarm.permission.SET_ALARM
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:46:5-78
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:47:5-78
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:46:22-75
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:47:22-75
 uses-permission#android.permission.INTERNET
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:47:5-67
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:48:5-67
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:47:22-64
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:48:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:48:5-81
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:49:5-81
 	android:name
-		ADDED from C:\pleiades-e4.4-java_20130625\pleiades\workspace\Four_Comics_Alarm\AndroidManifest.xml:48:22-78
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:49:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:50:5-66
+	android:name
+		ADDED from C:\Users\meem\Desktop\Four_Comics_Alarm\AndroidManifest.xml:50:22-63
