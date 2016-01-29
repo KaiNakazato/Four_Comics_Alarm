@@ -3,4 +3,4 @@
     android:id="@+id/fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" /><!-- From: file:/C:/Users/tona/Documents/GitHub/Four_Comics_Alarm/res/layout/fragment_tab_root.xml -->
+    android:orientation="vertical" /><!-- From: file:/Users/nakazatokai/Documents/workspace(AndroidStudio)/Four_Comics_Alarm/res/layout/fragment_tab_root.xml -->

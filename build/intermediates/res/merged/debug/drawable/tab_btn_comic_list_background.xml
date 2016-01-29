@@ -8,4 +8,4 @@
     <item
           android:state_pressed="false"
           android:drawable="@mipmap/tab_haikei" />
-</selector><!-- From: file:/C:/Users/tona/Documents/GitHub/Four_Comics_Alarm/res/drawable/tab_btn_comic_list_background.xml -->
+</selector><!-- From: file:/Users/nakazatokai/Documents/workspace(AndroidStudio)/Four_Comics_Alarm/res/drawable/tab_btn_comic_list_background.xml -->
