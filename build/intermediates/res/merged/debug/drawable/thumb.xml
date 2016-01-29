@@ -9,4 +9,4 @@
 		android:state_pressed="false"
 		android:drawable="@mipmap/volume_button"
 		/>
-</selector><!-- From: file:/C:/Users/tona/Desktop/Four_Comics_Alarm/Four_Comics_Alarm/res/drawable/thumb.xml -->
+</selector><!-- From: file:/C:/Users/tona/Documents/GitHub/Four_Comics_Alarm/res/drawable/thumb.xml -->

@@ -6,4 +6,4 @@
     <item android:state_checked="true"
         android:drawable="@mipmap/tomato_button" >
     </item>
-</selector><!-- From: file:/C:/Users/tona/Desktop/Four_Comics_Alarm/Four_Comics_Alarm/res/drawable/tggle_btn_alarm.xml -->
+</selector><!-- From: file:/C:/Users/tona/Documents/GitHub/Four_Comics_Alarm/res/drawable/tggle_btn_alarm.xml -->
