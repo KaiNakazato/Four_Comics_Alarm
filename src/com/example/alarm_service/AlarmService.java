@@ -9,6 +9,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 import com.example.base_fourcomics_alarm.MainActivity;
+import com.example.control_alarm.AlarmFragment;
 import com.example.control_alarm.AlarmPreference;
 import com.example.control_alarm.AlarmPreferenceDefinition;
 import com.example.framecomics.R;
@@ -23,10 +24,10 @@ public class AlarmService extends Service {
     public static final String TAG = "AlarmService";
     private static final int notificationId = 0;
     private NotificationManager notificationManager;
-    private Notification.Builder notificationBuilder;
-    private int targetHour, targetMinute;
     private AlarmPreference ap;
 
+    private int targetHour, targetMinute, selectCharacter;
+    private boolean isSnooze, isVibration;
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -45,7 +46,7 @@ public class AlarmService extends Service {
         minute = targetMinute < 10 ? "0" + targetMinute : "" + targetMinute;
 
         notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        notificationBuilder = new Notification.Builder(getApplicationContext());
+        Notification.Builder notificationBuilder = new Notification.Builder(getApplicationContext());
         notificationBuilder.setOngoing(true);
         notificationBuilder.setSmallIcon(R.drawable.ic_launcher);
         notificationBuilder.setContentTitle("Four Comics Alarm");
@@ -72,7 +73,7 @@ public class AlarmService extends Service {
                 ap.editPreferenceBool(AlarmPreferenceDefinition.ALARM_SWITCH_KEY, false);
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra(TAG, true);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 getApplication().startActivity(intent);
             }
         }, delay);
